@@ -187,7 +187,7 @@ class CacheManager extends Construct {
     });
 
     /** Function URL */
-    const functionUrl = apiFunction.addFunctionUrl({ authType: lambda.FunctionUrlAuthType.NONE });
+    const functionUrl = apiFunction.addFunctionUrl({ authType: lambda.FunctionUrlAuthType.AWS_IAM });
 
     this.url = functionUrl.url;
   }
